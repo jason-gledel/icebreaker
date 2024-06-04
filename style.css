@@ -1,0 +1,305 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* MON CSS */
+
+h1 {
+    text-align: center;
+    margin: 60px 0 40px 0;
+    font-size: 40px;
+    font-family:  "DM Sans", sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+body {
+    background-color: #2C2C2C;
+    font-family:  "DM Sans", sans-serif;
+    font-size: 16px;
+
+}
+
+body p {
+    line-height: normal;
+}
+
+.container {
+width: 1140px;
+margin: 0 auto;
+}
+
+.ligne1, .ligne2 {
+    display: flex;
+}
+
+
+.carte {
+   width: 45%; 
+   display: block;
+   margin: 40px;
+   background-color: #fff;
+   padding: 40px;
+   border-radius: 20px;
+   border: 20px solid #F3CE6E;
+}
+
+.nom {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.pv {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: #000 solid;
+    border-radius: 5px;
+}
+
+
+
+#carte-jason .nom {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#carte-pm .nom {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #F3CE6E;
+    border-radius: 5px;
+    color: #000;
+}
+
+#carte-virginie .nom {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #F3CE6E;
+    border-radius: 5px;
+    color: #000;
+}
+
+
+.titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#carte-jason .subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+
+}
+
+#carte-pm .subtitle, #carte-virginie .subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #F3CE6E;
+    color: #000;
+    border-radius: 5px;
+
+}
+
+
+.subtitle-2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.theme {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+#carte-pm {
+    background-color: #B0FFF1;
+}
+
+#carte-brandon {
+    background-color: #EFB0FF;
+}
+
+#carte-virginie {
+    background-color: #FFAD7E;
+}
+
+#carte-brandon .feu {
+    font-size:30px;
+}
+
+
+
+#carte-pm .photo {
+    background-image: url(assets/images/img-pm.jpg);
+    width: 100%;
+    height: 360px;
+    margin: 20px 0 40px 0;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#carte-brandon .photo {
+    background-image: url(assets/images/img-brandon.jpeg);
+    width: 100%;
+    height: 360px;
+    margin: 20px 0 40px 0;
+    border-radius: 10px;
+    background-size: cover;
+
+}
+
+
+#carte-virginie .photo {
+    background-image: url(assets/images/img-virginie.jpg);
+    width: 100%;
+    height: 360px;
+    margin: 20px 0 40px 0;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+#carte-jason .photo {
+    background-image: url(assets/images/img-jason.jpeg);
+    width: 100%;
+    height: 360px;
+    margin: 20px 0 40px 0;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.carac {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.talent {
+    width: 45%;
+}
+
+.intro {
+    margin-bottom: 40px;
+}
+
+.faible {
+    width: 40%;
+}
+
+.puissance {
+    display: flex;
+    align-items: center;
+}
+
+#carte-pm .puissance .etoiles, #carte-virginie .puissance .etoiles, #carte-brandon .puissance .etoiles {
+    background-image: url(assets/images/etoile1.png);
+    width: 160px;
+    height: 24px;
+}
+
+#carte-jason .etoiles {
+background-image: url(assets/images/etoile2.png);
+width: 160px;
+height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
