@@ -59,6 +59,7 @@ body {
     background-color: #2C2C2C;
     font-family:  "DM Sans", sans-serif;
     font-size: 16px;
+    
 
 }
 
@@ -66,25 +67,67 @@ body p {
     line-height: normal;
 }
 
+
 .container {
 width: 1140px;
 margin: 0 auto;
 }
 
-.ligne1, .ligne2 {
-    display: flex;
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    justify-items: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
 }
 
 
 .carte {
-   width: 45%; 
    display: block;
-   margin: 40px;
-   background-color: #fff;
-   padding: 40px;
    border-radius: 20px;
-   border: 20px solid #F3CE6E;
+   width:100%;
+   height: 1000px;
+   perspective: 1000px;
 }
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  
+}
+
+.card-front, .card-back {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.card-front {
+    background: repeating-conic-gradient(from 45deg, #ff4747 0% 25%, #ffc147 0% 50%);
+    background-size: 55px 55px;
+    background-color: #ffc147;
+    
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+}
+
+
+.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
 
 .nom {
     font-size: 24px;
@@ -110,10 +153,11 @@ margin: 0 auto;
     font-weight: bold;
     display: inline-block;
     padding: 5px 10px;
-    background-color: #000;
+    background-color: #F3CE6E;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
 }
+
 
 #carte-pm .nom {
     font-size: 24px;
@@ -135,6 +179,17 @@ margin: 0 auto;
     color: #000;
 }
 
+#carte-brandon .nom {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #F3CE6E;
+    border-radius: 5px;
+    color: #000;
+}
+
+
 
 .titre {
     display: flex;
@@ -154,19 +209,8 @@ margin: 0 auto;
     border-radius: 5px;
 }
 
-#carte-jason .subtitle {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 5px;
 
-}
-
-#carte-pm .subtitle, #carte-virginie .subtitle {
+#carte-pm .subtitle, #carte-virginie .subtitle, #carte-jason .subtitle, #carte-brandon .subtitle {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -192,7 +236,7 @@ margin: 0 auto;
 
 
 
-
+/*
 
 #carte-pm {
     background-color: #B0FFF1;
@@ -209,7 +253,7 @@ margin: 0 auto;
 #carte-brandon .feu {
     font-size:30px;
 }
-
+*/
 
 
 #carte-pm .photo {
